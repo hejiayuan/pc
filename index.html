@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的首页 微博-随时随地发现新鲜事</title>
+    <meta name="keywords" content="新浪微博">
+    <meta name="description"
+          content="玩转微博"
+    />
+    <link type="image/x-icon" rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less-2.5.3.min.js"></script>
+
+    <style>
+        @font-face {font-family: "iconfont";
+            src: url('iconfont/iconfont.eot?t=1479307771895'); /* IE9*/
+            src: url('iconfont/iconfont.eot?t=1479307771895#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('iconfont/iconfont.woff?t=1479307771895') format('woff'), /* chrome, firefox */
+            url('iconfont/iconfont.ttf?t=1479307771895') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('iconfont/iconfont.svg?t=1479307771895#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+<!--导航条-->
+<header class="fixed-header" id="header">
+    <section class="header w1280">
+        <!--微博logo-->
+        <div class="logo">
+            <a href="" class="weiBo"><span class="weiBoIcon"></span></a>
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <input type="text" value="" class="searchIn" placeholder=""/>
+            <span>搜索微博、找人</span>
+            <a href="" class="iconfont">&#xe612;</a>
+        </div>
+        <!--右边部分的导航-->
+        <nav class="nav">
+            <div class="left">
+                <a href="javascript:;"><span class="iconfont">&#xe605;</span>首页</a>
+                <a href="javascript:;"><span class="iconfont">&#xe677;</span>视频</a>
+                <a href="javascript:;"><span class="iconfont">&#xe632;</span>发现</a>
+                <a href="javascript:;"><span class="iconfont">&#xe67e;</span>游戏</a>
+            </div>
+            <div class="right">
+                <a href="javascript:;">注册</a>
+                <span></span>
+                <a href="javascript:;">登录</a>
+            </div>
+        </nav>
+        <!--主要内容下面的整个大盒子-->
+    </section>
+</header>
+<!--下面的主要内容-->
+<article class="box">
+    <div class="box2">
+        <main class="main" id="main">
+            <!--左边的导航-->
+            <div class="navBox">
+                <nav class="slideNav">
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe605;</span>
+                        <span class="text">推荐</span>
+                        <em class="hot">HOT</em>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe637;</span>
+                        <span class="text">明星</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe737;</span>
+                        <span class="text">视频</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe603;</span>
+                        <span class="text">搞笑</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe6ff;</span>
+                        <span class="text">情感</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe606;</span>
+                        <span class="text">社会</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe74f;</span>
+                        <span class="text">综艺</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe64e;</span>
+                        <span class="text">美妆</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe659;</span>
+                        <span class="text">美食</span>
+                    </a>
+                    <a href="javascript:;" class="block">
+                        <span class="icon iconfont">&#xe69c;</span>
+                        <span class="text">美女</span>
+                        <em class="hot new">NEW</em>
+                    </a>
+                    <div id="block" class="more-box">
+                        <a href="javascript:;" class="block">
+                            <span class="icon">…</span>
+                            <span class="text">更多</span>
+
+                        </a>
+                        <!--隐藏的盒子 鼠标移入更多显示-->
+                        <div class="hide" style="display: none" id="hide">
+                            <em></em>
+                            <a href="javascript:;">
+                                <span class="iconfont">&#xe635;</span>
+                                <span>电影</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="iconfont">&#xe61b;</span>
+                                <span>萌宠</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="iconfont">&#xe678;</span>
+                                <span>时尚</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="iconfont">&#xe609;</span>
+                                <span>体育</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="iconfont big">&#xe679;</span>
+                                <span>数码</span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="iconfont">&#xe630;</span>
+                                <span>星座</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                </nav>
+            </div>
+            <!--中间的内容-->
+            <ul class="mid" id="mid">
+                <!--第一个li-->
+                <li class="mid-first">
+                    <ul class="inside">
+                        <li class="one">
+                            <!--上半部分的图片和播放-->
+                            <div class="top">
+                                <img src="img/1.jpg" alt="">
+                                <span class=" play"></span>
+                            </div>
+                            <div class="bottom">
+                                <a href="javascript:;" class="bot">
+                                    <a href="javascript:;" class="person">
+                                        <img src="img/2.jpg" alt="">
+                                        <span>雅西高速交警蜀黎</span>
+                                    </a>
+                                    <!--右边的播放-->
+                                    <div class="sRight">
+                                        <span class="iconfont play2">&#xe608;</span><em>60万</em>
+                                    </div>
+                                    <p>帅不过三秒[哈哈]我们的#朴宝剑# 原来还有这么逗的一面[兔子]#云画的月光#  http://t.cn/RtvSOjD</p>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="one">
+                            <!--上半部分的图片和播放-->
+                            <div class="top">
+                                <img src="img/1.jpg" alt="">
+                                <span class=" play"></span>
+                            </div>
+                            <div class="bottom">
+                                <a href="javascript:;" class="bot">
+                                    <a href="javascript:;" class="person">
+                                        <img src="img/2.jpg" alt="">
+                                        <span>雅西高速交警蜀黎</span>
+                                    </a>
+                                    <!--右边的播放-->
+                                    <div class="sRight">
+                                        <span class="iconfont play2">&#xe608;</span><em>60万</em>
+                                    </div>
+                                    <p>帅不过三秒[哈哈]我们的#朴宝剑# 原来还有这么逗的一面[兔子]#云画的月光#  http://t.cn/RtvSOjD</p>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="one">
+                            <!--上半部分的图片和播放-->
+                            <div class="top">
+                                <img src="img/1.jpg" alt="">
+                                <span class=" play"></span>
+                            </div>
+                            <div class="bottom">
+                                <a href="javascript:;" class="bot">
+                                    <a href="javascript:;" class="person">
+                                        <img src="img/2.jpg" alt="">
+                                        <span>雅西高速交警蜀黎</span>
+                                    </a>
+                                    <!--右边的播放-->
+                                    <div class="sRight">
+                                        <span class="iconfont play2">&#xe608;</span><em>60万</em>
+                                    </div>
+                                    <p>帅不过三秒[哈哈]我们的#朴宝剑# 原来还有这么逗的一面[兔子]#云画的月光#  http://t.cn/RtvSOjD</p>
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mid-second" id="midLi0">
+                    <div class="second-content">
+                        <div class="pic-box">
+                            <a href="javascript:;">
+                                <img src="img/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--右上-->
+                        <div class="info-aside">
+                            <div class="info-box">
+                                <div class="text-box">
+                                    <a href="javascript:;">一下子洞察六大行业，看阿瑟·黑利就够了</a>
+                                    <div class="text-box-font">彻底、全面、深入地了解一个行业——</div>
+                                </div>
+                                <!--最下面的信息-->
+                                <div class="person-box">
+                                    <a href="javascript:;">
+                                    <span class="headPic">
+                                        <img src="img/7.jpg" alt="">
+                                    </span>
+                                    </a>
+                                    <a href="javascript:;" class="think">@逻辑思维</a>
+                                    <span class="think">11月25日 08:38</span>
+                                    <!--右边-->
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe6bc;</em><em class="likePeople">49</em>
+                                </span>
+                                    <span class="left-line"></span>
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe64f;</em><em>14</em>
+                                </span>
+                                    <span class="left-line"></span>
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe61c;</em><em>47</em>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="mid-third" id="midLi1">
+                    <div class="third-content">
+                        <div class="third-content-title">
+                            <a href="javascript:;" class="third-title">新一届海口马拉松赛道确定 明年1月8日开跑</a>
+                            <p>据富力海口马拉松微信公众号</p>
+                        </div>
+                        <div class="third-list">
+                            <ul>
+                                <li>
+                                    <img src="img/8.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/8.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/8.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="third-person">
+                            <a href="javascript:;">
+                                    <span class="hainan">
+                                        <img src="img/7.jpg" alt="">
+                                    </span>
+                            </a>
+                            <a href="javascript:;" class="hainan-news">@海南日报</a>
+                            <span class="third-time">今天 10:41</span>
+                            <!--右边-->
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe6bc;</em><em class="likePeople">49</em>
+                                </span>
+                            <span class="left-line"></span>
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe64f;</em><em>14</em>
+                                </span>
+                            <span class="left-line"></span>
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe61c;</em><em>47</em>
+                                </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="mid-forth">
+                    <div class="forth-box">
+                        <a href="javascript:;">
+                            <img src="img/8.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="mid-fifth" id="midLi2">
+                    <div class="second-content">
+                        <div class="pic-box">
+                            <a href="javascript:;">
+                                <img src="img/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--右上-->
+                        <div class="info-aside">
+                            <div class="info-box">
+                                <div class="text-box">
+                                    <div class="text-box-font">《胖鱼公主》</div>
+                                </div>
+                                <!--最下面的信息-->
+                                <div class="person-box">
+                                    <a href="javascript:;">
+                                    <span class="headPic">
+                                        <img src="img/7.jpg" alt="">
+                                    </span>
+                                    </a>
+                                    <a href="javascript:;" class="think">@逻辑思维</a>
+                                    <span class="think">11月25日 08:38</span>
+                                    <!--右边-->
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe6bc;</em><em class="likePeople">49</em>
+                                </span>
+                                    <span class="left-line"></span>
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe64f;</em><em>14</em>
+                                </span>
+                                    <span class="left-line"></span>
+                                    <span class="like">
+                                    <em class="iconfont likeIcon">&#xe61c;</em><em>47</em>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="mid-sixth" id="midLi3">
+                    <div class="third-content">
+                        <div class="third-content-title">
+                            【济南一小区高层着火，4名“蜘蛛侠”空降救人
+                            <img src="img/8.gif" alt="">
+                            】11月26日上午10点半左右，济南市一小区高层着火。四位在周边工地干活的高楼清洁工，骑着摩托车自发赶往着火现场。由于电梯关闭，四位“蜘蛛侠”接力背着重80余斤的绳索，爬到28楼，放绳砸窗救下数人。你愿意为超级英雄点个赞吗？
+                            <img src="img/9.gif" alt="">
+                            <a href="javascript:;"></a>
+                        </div>
+                        <div class="third-list">
+                            <ul>
+                                <li>
+                                    <img src="img/10.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/10.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/10.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="third-person">
+                            <a href="javascript:;">
+                                    <span class="hainan">
+                                        <img src="img/7.jpg" alt="">
+                                    </span>
+                            </a>
+                            <a href="javascript:;" class="hainan-news">@海南日报</a>
+                            <span class="third-time">今天 10:41</span>
+                            <!--右边-->
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe6bc;</em><em class="likePeople">49</em>
+                                </span>
+                            <span class="left-line"></span>
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe64f;</em><em>14</em>
+                                </span>
+                            <span class="left-line"></span>
+                            <span class="like">
+                                    <em class="iconfont likeIcon">&#xe61c;</em><em>47</em>
+                                </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="mid-last" id="mid-last">
+                    <div class="last-box">
+                        <p>
+                            <em></em>正在加载中，请稍候...
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <!--右边的内容-->
+            <div class="main-right" id="mainR">
+                <div  id="login">
+                    <div class="login">
+                        <div class="enter">
+                            <a href="javascript:;" class="account yellow-border" id="account">账号登录</a>
+                            <a href="javascript:;" class="safe" id="safe">安全登录</a>
+                            <a href="javascript:;" class="rightSide"></a>
+                        </div>
+                        <!--这是账号登录-->
+                        <div id="acc" class="acc">
+                            <div>
+                                <div class="username">
+                                    <input type="text" placeholder="邮箱/会员帐号/手机号">
+                                    <span></span>
+                                </div>
+                                <div class="password">
+                                    <input type="text" placeholder="请输入密码">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="remember-pass">
+                                <label for="me">
+                                    <input type="checkbox" id="me">
+                                    <span>记住我</span>
+                                </label>
+                                <div class="forget">
+                                    <a href="javascript:;">忘记密码</a>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="logining"> <span>登录</span></a>
+                            <div class="without">
+                                <span>还没有微博？</span>
+                                <a href="javascript:;">立即注册</a>
+                            </div>
+                            <div class="other-login">
+                                <span>其他登录：</span>
+                                <div class="other-login-list">
+                                    <a href="javascript:;" class="taobao"></a>
+                                    <a href="javascript:;" class="qq"></a>
+                                    <a href="javascript:;" class="yidong"></a>
+                                    <a href="javascript:;" class="tianyi"></a>
+                                    <a href="javascript:;" class="san"></a>
+                                    <a href="javascript:;" class="liantong"></a>
+                                    <a href="javascript:;" class="baidu"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--这是安全登录-->
+                        <div id="accSafe" class="accSafe">
+                            <div class="QR">
+                                <img src="img/gen.png" alt="">
+                                <p> 请打开微博客户端"扫一扫"</p>
+                            </div>
+                            <span>还没有微博？</span>
+                            <a href="javascript:;">立即注册!</a>
+                        </div>
+                    </div>
+                    <!--手机的那一块-->
+                    <div class="phone">
+                        <div class="iphone">
+                            <a href="javascript:;">
+                                <span class="iconfont iphone-icon">&#xe691;</span>
+                                <span class="iphone-app">iphone<br>客户端下载</span>
+                            </a>
+                        </div>
+                        <div class="Android">
+                            <a href="javascript:;">
+                                <span class="iconfont Android-icon">&#xe617;</span>
+                                <span class="Android-app">Android<br>客户端下载</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--热门话题-->
+                <div class="topic">
+                    <div class="topic-top">
+                        <span>热门话题</span>
+                        <div class="change">
+                            <a href="javascript:;" class="change-icon"><em class="iconfont">&#xe607;</em>换一换</a>
+                        </div>
+                    </div>
+                    <div class="topic-bottom">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">#恋上冬日#</a>
+                                <span>1.2亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#就爱拍拍拍#</a>
+                                <span>2397.2亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#尖叫之夜#</a>
+                                <span>1.7亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#拜托了衣橱#</a>
+                                <span>4.4亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#今日贴纸打卡#</a>
+                                <span>40.8亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#易烊千玺1128十六...#</a>
+                                <span>18.6亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#神奇动物在哪里#</a>
+                                <span>7.9亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#冬季美食趴#</a>
+                                <span>2.5亿</span>
+                            </li>
+                            <li>
+                                <a href="javascript:;">#与李易峰天长地久#</a>
+                                <span>5.3亿</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--广告-->
+                <aside class="add">
+                    <img src="img/3.jpg" alt="">
+                </aside>
+                <!--新浪头条-->
+                <div class="headline">
+                    <h2>新浪头条</h2>
+                    <div class="headline-main">
+                        <ul class="hotNew">
+                            <li><a href="javascript:;"><span class="iconfont">&#xe650;</span>热榜要闻</a></li>
+                            <li><a href="javascript:;"><span class="iconfont">&#xe60c;</span>我爱看图</a></li>
+                            <li><a href="javascript:;"><span class="iconfont">&#xe6ff;</span>猜你喜欢</a></li>
+                            <li><a href="javascript:;"><span class="iconfont">&#xe6d1;</span>精彩视频</a></li>
+                        </ul>
+                        <p>
+                            <span><a href="javascript:;">要闻</a></span>
+                            <a href="javascript:;">众星陷乐视危局 或现救命草？</a>
+                        </p>
+                        <p>
+                            <span><a href="javascript:;">热图</a></span>
+                            <a href="javascript:;">曝王菲霆锋机舱照疑出国同游</a>
+                        </p>
+                        <p>
+                            <span><a href="javascript:;">视频</a></span>
+                            <a href="javascript:;">人妻甘比被叫"刘太"露笑容</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="music">
+                    <a href="javascript:;">
+                        <img src="img/4.png" alt="">
+                    </a>
+                </div>
+                <!--微博找人-->
+                <div class="headline ">
+                    <h2>微博找人</h2>
+                    <div class="findPerson-weibo"">
+                        <div class="findPerson first-child">
+                        <h3>名人</h3>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <i><img src="img/5.png" alt=""></i>
+                                    <span>明星</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i><img src="img/11.png" alt=""></i>
+                                    <span>商界</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i><img src="img/12.png" alt=""></i>
+                                    <span>媒体精英</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i><img src="img/13.png" alt=""></i>
+                                    <span>作家</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i><img src="img/14.png" alt=""></i>
+                                    <span>政府官员</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="findPerson">
+                            <h3>专家</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/15.png" alt=""></i>
+                                        <span>医疗</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/16.png" alt=""></i>
+                                        <span>育儿</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/17.png" alt=""></i>
+                                        <span>IT互联网</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/18.png" alt=""></i>
+                                        <span>电台</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/19.png" alt=""></i>
+                                        <span>财经</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/20.png" alt=""></i>
+                                        <span>教育</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/21.png" alt=""></i>
+                                        <span>法律</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/22.png" alt=""></i>
+                                        <span>美妆</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/23.png" alt=""></i>
+                                        <span>艺术</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/24.png" alt=""></i>
+                                        <span>设计</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/25.png" alt=""></i>
+                                        <span>房产家装</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/26.png" alt=""></i>
+                                        <span>汽车</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/27.png" alt=""></i>
+                                        <span>交通</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/28.png" alt=""></i>
+                                        <span>职业招聘</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/29.png" alt=""></i>
+                                        <span>婚庆</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/30.png" alt=""></i>
+                                        <span>宗教</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="findPerson">
+                            <h3>专家</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/31.png" alt=""></i>
+                                        <span>时尚</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/32.png" alt=""></i>
+                                        <span>美女</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/33.png" alt=""></i>
+                                        <span>电影</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/34.png" alt=""></i>
+                                        <span>电视剧</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/35.png" alt=""></i>
+                                        <span>音乐</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/36.png" alt=""></i>
+                                        <span>动漫</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/37.png" alt=""></i>
+                                        <span>游戏</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/38.png" alt=""></i>
+                                        <span>星座</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/39.png" alt=""></i>
+                                        <span>搞笑</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/40.png" alt=""></i>
+                                        <span>情感两性</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/41.png" alt=""></i>
+                                        <span>运动健身</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/42.png" alt=""></i>
+                                        <span>体育</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/43.png" alt=""></i>
+                                        <span>萌宠</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/44.png" alt=""></i>
+                                        <span>美食</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/45.png" alt=""></i>
+                                        <span>旅游</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/46.png" alt=""></i>
+                                        <span>摄影</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/47.png" alt=""></i>
+                                        <span>历史</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/48.png" alt=""></i>
+                                        <span>军事</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/49.png" alt=""></i>
+                                        <span>科学</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/50.png" alt=""></i>
+                                        <span>数码</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="findPerson">
+                            <h3>名人</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/51.png" alt=""></i>
+                                        <span>政务</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i><img src="img/52.png" alt=""></i>
+                                        <span>媒体</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+        </main>
+        <!--右边的固定刷新 回到顶部-->
+        <a href="javascript:;" class="refresh">
+            <em class="iconfont">&#xe601;</em>
+        </a>
+        <a href="#" class="backTop">
+            <em class="iconfont">&#xe631;</em>
+        </a>
+    </div>
+</article>
+<!--最下面的内容-->
+<footer class="footer">
+    <div class="footer-top">
+        <dl class="list">
+            <!--第一个-->
+            <dt>微博精彩</dt>
+            <dd>
+                <a href="javascript:;">热门微博</a>
+                <a href="javascript:;">热门话题</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">名人堂</a>
+                <a href="javascript:;">微博会员</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">微相册</a>
+                <a href="javascript:;">微游戏</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">微指数</a>
+            </dd>
+        </dl>
+        <!--扫码-->
+        <dl class="list list2">
+            <dt>手机玩微博</dt>
+            <dd>
+                <span>
+                    <img src="img/footer_code.jpg" alt="">
+                </span>
+                <a href="javascript:;">扫码下载，更多版本 <br>戳这里</a>
+            </dd>
+        </dl>
+        <!--合作-->
+        <dl class="list">
+            <dt>认证&合作</dt>
+            <dd>
+                <a href="javascript:;">申请认证</a>
+                <a href="javascript:;">开放平台</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">企业微博</a>
+                <a href="javascript:;">链接网站</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">微博标识</a>
+                <a href="javascript:;">广告服务</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">微博商学院</a>
+                <a href="javascript:;">广告代理商</a>
+            </dd>
+        </dl>
+        <dl class="list">
+            <dt>微博帮助</dt>
+            <dd>
+                <a href="javascript:;">常见问题</a>
+            </dd>
+            <dd>
+                <a href="javascript:;">自助服务</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-bottom-idea">
+            <a href="javascript:;">
+                <em></em>微博客服
+            </a>
+            <a href="javascript:;">意见反馈</a>
+            <a href="javascript:;">舞弊举报</a>
+            <a href="javascript:;">开放平台</a>
+            <a href="javascript:;">微博招聘</a>
+            <a href="javascript:;">新浪网导航</a>
+            <a href="javascript:;">举报处理大厅</a>
+            <select >
+                <option value="zh-cn selected">中文(简体)</option>
+                <option value="zh-tw">中文(臺灣)</option>
+                <option value="zh-hk">中文(香港)</option>
+                <option value="en">English</option>
+
+            </select>
+        </p>
+        <p class="footer-bottom-allow">
+            <a href="javascript:;">京ICP证100780号</a>
+            <a href="javascript:;">互联网药品服务许可证</a>
+            <a href="javascript:;">互联网医疗保健许可证</a>
+            <a href="javascript:;">京网文[2014]2046-296号</a>
+            <a href="javascript:;">京ICP备12002058号</a>
+            <a href="javascript:;">增值电信业务经营许可证B2-20140447</a>
+        </p>
+        <p class="footer-bottom-company">
+            <span>Copyright © 2009-2016 WEIBO 北京微梦创科网络技术有限公司</span>
+            <span class="police">
+                <a href="javascript:;">
+                    <em></em>京公网安备11000002000019号
+                </a>
+            </span>
+        </p>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+
+</body>
+</html>

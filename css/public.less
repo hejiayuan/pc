@@ -1,0 +1,57 @@
+
+@color-white:#fff;
+@color-text:#333;
+@color-bottom:#808080;
+@color-hover:#eb7350;
+
+@border-radius:2px;
+
+@img-url:'../img';
+@background:url("@{img-url}/sprite_login.png") no-repeat;
+@background-icon:url("@{img-url}/icon.png") no-repeat;
+
+.clear{
+  content:'';
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.liPublic{
+  padding:20px 20px;
+  margin-bottom:10px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow:0 0 2px rgba(0,0,0,.15);
+  background: #fff;
+}
+.like{
+  float: right;
+  padding: 0 8px;
+  height: 20px;
+  line-height: 20px;
+  .likeIcon{
+    font-size: 14px;
+    margin-right: 3px;
+    vertical-align: -2px;
+    &:hover{
+      color:@color-hover;
+    }
+  }
+}
+/*吧公共的样式放到这里，比如...，比如哪几个head*/
+/*hack兼容
+_width/height/margin不兼容的话可以加 还有* /
+_*/
+
+/*
+Js要加的，当中间的内容加载完成以后左边和右边的导航条就会加上这个类名
+.NavMargin{
+          margin-top:-163px;
+        }
+*/
